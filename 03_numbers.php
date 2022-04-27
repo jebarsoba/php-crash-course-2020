@@ -49,5 +49,7 @@ echo floor(2.6) . '<br>';
 echo ceil(2.4) . '<br>';
 
 // Formatting numbers
+$number = 123456789.123;
+echo number_format($number, 3, ',', '.');
 
 // https://www.php.net/manual/en/ref.math.php
