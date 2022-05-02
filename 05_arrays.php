@@ -79,20 +79,47 @@ echo array_reduce($numbers, fn($carry, $n) => $carry + $n);
 // ============================================
 
 // Create an associative array
+$person = [
+  'name' => 'Brad',
+  'surname' => 'Traversy',
+  'age' => 30,
+  'hobbies' => ['Tennis', 'Video Games']
+];
 
 // Get element by key
+echo $person['name'].'<br>';
+echo $person['age'].'<br>';
 
 // Set element by key
-
-// Null coalescing assignment operator. Since PHP 7.4
+$person['channel'] = 'TraversyMedia';
 
 // Check if array has specific key
+isset($person['age']); // true
+isset($person['address']); // false
 
 // Print the keys of the array
+var_dump(array_keys($person));
 
 // Print the values of the array
+var_dump(array_values($person));
 
 // Sorting associative arrays by values, by keys
+ksort($person);
+var_dump($person);
 
+krsort($person);
+var_dump($person);
+
+asort($person);
+var_dump($person);
+
+arsort($person);
+var_dump($person);
 
 // Two dimensional arrays
+$todoItems = [
+  ['title' => 'item 1', 'completed' => true],
+  ['title' => 'item 2', 'completed' => false]
+];
+
+var_dump($todoItems);
