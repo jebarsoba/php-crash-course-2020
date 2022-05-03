@@ -44,3 +44,21 @@ $person['name'] ??= 'Anonymous';
 echo $person['name'];
 
 // switch
+$userRole = 'admin';
+switch ($userRole) {
+    case 'admin':
+        echo 'You are admin';
+        break;
+    case 'editor':
+        echo 'You can edit articles';
+        break;
+    default:
+        echo 'Unknown role';
+}
+
+// match alternative...
+echo match ($userRole) {
+    'admin' => 'You are admin',
+    'editor' => 'You can edit articles',
+    default => 'Unknown role',
+};
