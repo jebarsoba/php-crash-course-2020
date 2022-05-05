@@ -1,3 +1,11 @@
+<?php
+session_start();
+echo session_id() . '<br>';
+
+$_SESSION['counter'] ??= 0;
+$_SESSION['counter']++;
+?>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -8,6 +16,6 @@
     <title>Document</title>
 </head>
 <body>
-<h1>My Awesome page></h1>
+<h1>You've visited this page <?php echo $_SESSION['counter'] ?> times!</h1>
 </body>
 </html>
