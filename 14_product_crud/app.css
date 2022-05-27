@@ -1,0 +1,54 @@
+.new-note {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.new-note input {
+    margin-bottom: 15px;
+}
+
+.new-note textarea {
+    margin-bottom: 15px;
+}
+
+.new-note button {
+    margin-bottom: 10px;
+}
+
+.notes {
+    width: 80%;
+    margin-left: 10%;
+}
+
+.note {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: yellow;
+}
+
+.notes .note .title {
+    padding: 5px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.notes .note .description {
+    padding: 5px;
+}
+
+.notes .note .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background-color: transparent;
+}
+
+.notes .note small {
+    align-self: flex-end;
+    padding: 5px;
+    font-style: italic;
+}
